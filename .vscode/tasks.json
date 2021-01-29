@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Build ElementBinding",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/ElementBinding/elementbinding-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/ElementBinding/elementbinding-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/ElementBinding/elementbinding-approuter"
+        }
+    },
+    {
+        "label": "Build ExpressionBinding",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/ExpressionBinding/expressionbinding-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/ExpressionBinding/expressionbinding-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/ExpressionBinding/expressionbinding-approuter"
+        }
+    },
+    {
+        "label": "Build Types",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/Types/types-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/Types/types-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/Types/types-approuter"
+        }
+    },
+    {
+        "label": "Build Formatter",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/Formatter/formatter-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/Formatter/formatter-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/Formatter/formatter-approuter"
+        }
+    },
+    {
+        "label": "Build i18n",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/i18n/i18n-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/i18n/i18n-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/i18n/i18n-approuter"
+        }
+    },
+    {
+        "label": "Build OData",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/OData/odata-approuter/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/OData/odata-approuter/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}/OData/odata-approuter"
+        },
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    }
+]
+}

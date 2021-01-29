@@ -1,0 +1,38 @@
+<mvc:View controllerName="training.bi.UI5Module.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" 
+xmlns:l="sap.ui.layout">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                    <l:Splitter orientation= "Vertical" height="45%">
+                        <Table items="/Customers" noDataText="There are no data" selectionChange="handleItemPress" mode="SingleSelectMaster">
+                            <columns>
+                                <Column><header><Text text="Title"/></header></Column>
+                                <Column><header><Text text="Name"/></header></Column>
+                                <Column><header><Text text="Address"/></header></Column>
+                                <Column><header><Text text="City"/></header></Column>
+                                <Column><header><Text text="Country"/></header></Column>
+                            </columns>
+                        <items>
+                        <ColumnListItem>
+                        <cells>
+                        <Text text="{ContactTitle}" />
+    <Text text="{ContactName}" />
+    <Text text="{Address}" />
+    <Text text="{City}" />
+        <Text text="{Country}" />
+                        </cells>
+                        
+                        </ColumnListItem>
+                        </items>
+                    
+                        </Table>
+                    </l:Splitter>
+                    
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

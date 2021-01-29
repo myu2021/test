@@ -1,0 +1,125 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ElementBinding-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/ElementBinding/elementbinding-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.30\"}"
+      ],
+      "cwd": "${workspaceFolder}/ElementBinding/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/ElementBinding/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/ElementBinding/UI5Module/.env1",
+      "preLaunchTask": "Build ElementBinding"
+    },
+    {
+      "name": "Run ExpressionBinding-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/ExpressionBinding/expressionbinding-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.30\"}"
+      ],
+      "cwd": "${workspaceFolder}/ExpressionBinding/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/ExpressionBinding/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/ExpressionBinding/UI5Module/.env2",
+      "preLaunchTask": "Build ExpressionBinding"
+    },
+    {
+      "name": "Run Types-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/Types/types-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.31\"}"
+      ],
+      "cwd": "${workspaceFolder}/Types/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Types/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/Types/UI5Module/.env3",
+      "preLaunchTask": "Build Types"
+    },
+    {
+      "name": "Run Formatter-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/Formatter/formatter-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.31\"}"
+      ],
+      "cwd": "${workspaceFolder}/Formatter/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Formatter/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/Formatter/UI5Module/.env4",
+      "preLaunchTask": "Build Formatter"
+    },
+    {
+      "name": "Run i18n-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/i18n/i18n-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.31\"}"
+      ],
+      "cwd": "${workspaceFolder}/i18n/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/i18n/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/i18n/UI5Module/.env5",
+      "preLaunchTask": "Build i18n"
+    },
+    {
+      "name": "Run OData-UI5Module",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/OData/odata-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/trainingbiUI5Module/index.html",
+        "--ui5",
+        "{\"version\":\"1.71.31\"}"
+      ],
+      "cwd": "${workspaceFolder}/OData/UI5Module",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/OData/UI5Module\"}"
+      },
+      "envFile": "${workspaceFolder}/OData/UI5Module/.env6",
+      "preLaunchTask": "Build OData"
+    }
+  ]
+}

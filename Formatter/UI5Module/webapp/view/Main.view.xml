@@ -1,0 +1,30 @@
+<mvc:View controllerName="training.bi.UI5Module.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <Table items="{/employees}">
+                            <columns>
+                                <Column ><header><Text text="Fullname"/></header></Column>
+                                <Column ><header><Text text="Age"/></header></Column>
+                                <Column ><header><Text text="Gender"/></header></Column>
+                                <Column ><header><Text text="Icon"/></header></Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem> 
+                                    <cells>
+                                        <Text text="{fullname}" />
+                                        <Text text="{age}" />
+                                        <Text text="{path: 'gender', formatter: '.formatGender'}" />
+                                        <core:Icon src="{path: 'gender', formatter: '.formatToIcon'}" size="48px" color="{path: 'gender', formatter: '.changer.formatColor'}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
